@@ -94,7 +94,7 @@ void Error_handler::Warning(const char *fmt, ...)
 {
   va_list argp;
   va_start(argp, fmt);
-  vWarning(fmt, argp);
+  //vWarning(fmt, argp);
   va_end(argp);
 }
 
@@ -103,7 +103,7 @@ bool Error_handler::CondWarning(const bool test, const char *fmt, ...)
   if (test) {
     va_list argp;
     va_start(argp, fmt);
-    vWarning(fmt, argp);
+    //vWarning(fmt, argp);
     va_end(argp);
   }
   return test;
